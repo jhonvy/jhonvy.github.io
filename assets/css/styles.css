@@ -930,6 +930,12 @@ h3 {
 	outline: none;
 	padding: 0.25rem 0.5rem 0.5rem 0;
 }
+
+.button-submit {
+	border: none;
+	cursor: pointer;
+}
+
 /*==================== FOOTER ====================*/
 
 .footer {
