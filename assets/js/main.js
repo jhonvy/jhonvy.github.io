@@ -32,28 +32,26 @@ function linkAction() {
 
 navlink.forEach((n) => n.addEventListener('click', linkAction));
 
-/*==================== ACCORDION SKILLS ====================*/
+/*==================== ANIMATION LETTERS ====================*/
 
-const skillscontent = document.getElementsByClassName('skills__content'),
-	skillsHeader = document.querySelectorAll('.skills__header');
+//Acontinuacion capturo todas mis letras y las guardo en un variable
+const $anip = document.querySelectorAll('.blast');
 
-function toggleSkills() {
-	let itemClass = this.parentNode.className;
+//Luego cada vez que pongo mi mause sobre una letra,me agrega la clase animated
+$anip.forEach((a) =>
+	a.addEventListener('mouseover', () => {
+		a.classList.add('animated');
+	})
+);
 
-	for (i = 0; i < skillscontent.length; i++) {
-		skillscontent[i].className = 'skills__content skills__close';
-	}
-
-	if (itemClass === 'skills__content skills__close') {
-		this.parentNode.className = 'skills__content skills__open';
-	}
-}
-
-skillsHeader.forEach((el) => {
-	el.addEventListener('click', toggleSkills);
-});
-
-/*==================== QUALIFICATION TABS ====================*/
+//Luego cada vez que quito el mause en una letra,me quita la clase animated
+$anip.forEach((a) =>
+	a.addEventListener('mouseleave', () => {
+		setTimeout(() => {
+			a.classList.remove('animated');
+		}, 1000);
+	})
+);
 
 /*==================== SERVICES MODAL ====================*/
 
@@ -79,37 +77,6 @@ modalCloses.forEach((modalClose) => {
 	});
 });
 
-/*==================== PORTFOLIO SWIPER  ====================*/
-
-let swiperPortfolio = new Swiper('.portfolio__container', {
-	cssMode: true,
-	loop: true,
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-});
-/*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper('.testimonial__container', {
-	loop: true,
-	grabCursor: true,
-	spaceBetween: 48,
-
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-		dynamicBullets: true,
-	},
-	breakpoints: {
-		568: {
-			slidesPerView: 2,
-		},
-	},
-});
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 const sections = document.querySelectorAll('section[id]');
@@ -140,8 +107,8 @@ window.addEventListener('scroll', scrollActive);
 function scrollHeader() {
 	const nav = document.getElementById('header');
 	// When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-	if (this.scrollY >= 80) nav.classList.add('scroll-header');
-	else nav.classList.remove('scroll-header');
+	if (this.scrollY >= 800) nav.classList.add('show_brackgroundNav');
+	else nav.classList.remove('show_brackgroundNav');
 }
 window.addEventListener('scroll', scrollHeader);
 
@@ -149,44 +116,26 @@ window.addEventListener('scroll', scrollHeader);
 
 function scrollUp() {
 	const scrollUp = document.getElementById('scroll-up');
+
 	// When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-	if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
+	if (this.scrollY >= 550) scrollUp.classList.add('show-scroll');
 	else scrollUp.classList.remove('show-scroll');
 }
 window.addEventListener('scroll', scrollUp);
-/*==================== DARK LIGHT THEME ====================*/
 
-const themeButton = document.getElementById('theme-button');
-const darkTheme = 'dark-theme';
-const iconTheme = 'uil-sun';
+/*==================== GSAP ANIMATION ====================*/
 
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme');
-const selectedIcon = localStorage.getItem('selected-icon');
-
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () =>
-	document.body.classList.contains(darkTheme) ? 'dark' : 'light';
-const getCurrentIcon = () =>
-	themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun';
-
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-	// If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-	document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](
-		darkTheme
-	);
-	themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](
-		iconTheme
-	);
-}
-
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-	// Add or remove the dark / icon theme
-	document.body.classList.toggle(darkTheme);
-	themeButton.classList.toggle(iconTheme);
-	// We save the theme and the current icon that the user chose
-	localStorage.setItem('selected-theme', getCurrentTheme());
-	localStorage.setItem('selected-icon', getCurrentIcon());
+gsap.from('.home__data', { opacity: 0, duration: 2, delay: 0.8, y: 25 });
+gsap.from('.home_title-super', { opacity: 0, duration: 2, delay: 0.9, y: 25 });
+gsap.from('.home__subtitle', { opacity: 0, duration: 2, delay: 1, y: 25 });
+gsap.from('.home__button', { opacity: 0, duration: 2, delay: 1.2, y: 25 });
+gsap.from('.home__scroll', { opacity: 0, duration: 2, delay: 1.3, y: 25 });
+gsap.from('.nav__logo', { opacity: 0, duration: 2, delay: 1.8, y: 25 });
+gsap.from('.nav__item', {
+	opacity: 0,
+	duration: 2,
+	delay: 1.9,
+	y: 25,
+	ease: 'expo.out',
+	stagger: 0.2,
 });

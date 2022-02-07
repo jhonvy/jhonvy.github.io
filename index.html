@@ -19,12 +19,14 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="" class="nav__logo">Jhon</a>
+                <div class="nav__logo">
+                    <a href=""><img src="./assets/img/Logo.png" alt="" height="50" width="50"></a>
+                </div>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
+                            <a href="#home" class="nav__link">
                                 <i class="uil uil-estate nav__icon"></i> Home
                             </a>
                         </li>
@@ -36,11 +38,6 @@
                         <li class="nav__item">
                             <a href="#skills" class="nav__link">
                                 <i class="uil uil-file-alt nav__icon"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">
-                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
                             </a>
                         </li>
                         <li class="nav__item">
@@ -56,68 +53,130 @@
                     </ul>
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
-                <div class="nav__btns">
-                    <!-- Theme change button -->
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
 
+                <div class="nav__btns">
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
                 </div>
+
             </nav>
         </header>
 
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
-            <section class="section_home" id="home">
+            <section class="section_home section" id="home">
+                
                 <div class="home__container container grid">
+                    
+                    <canvas id="canvas1"></canvas>
                     <div class="home__content">
+                        
                         <div class="home__data">
-                            <p class="prueba">Hi</p>
-                            <p class="prueba">I‘m Jhon Varon,</p>
-                            <p class="prueba">Web developer</p>
+                            <div class="home_title-super">
+                                <h1>
+                                    <span class="blast">H</span>
+                                    <span class="blast">i</span>
+                                    <span class="blast">,</span>
+                                    <br>
+                                    <span class="blast">I</span>
+                                    <span class="blast">’</span>
+                                    <span class="blast">m</span>
+                                    <span class="blast">  </span>
+                                    <span class="blast">  </span>
+                                    <span class="blast">J</span>
+                                    <span class="blast">h</span>
+                                    <span class="blast">o</span>
+                                    <span class="blast">n</span>
+                                    <span class="blast">  </span>
+                                    <span class="blast">  </span>
+                                    <span class="blast">V</span>
+                                    <span class="blast">a</span>
+                                    <span class="blast">r</span>
+                                    <span class="blast">o</span>
+                                    <span class="blast">n</span>
+                                    <span class="blast">,</span>
+                                    <br>
+                                    <span class="blast">w</span>
+                                    <span class="blast">e</span>
+                                    <span class="blast">b</span>
+                                    <span class="blast"> </span>
+                                    <span class="blast"> </span>
+                                    <span class="blast">d</span>
+                                    <span class="blast">e</span>
+                                    <span class="blast">v</span>
+                                    <span class="blast">e</span>
+                                    <span class="blast">l</span>
+                                    <span class="blast">o</span>
+                                    <span class="blast">p</span>
+                                    <span class="blast">e</span>
+                                    <span class="blast">r</span>   
+                                    <span class="blast">.</span>   
+                                </h1>
+                            </div>
+
                             <h3 class="home__subtitle">Backend developer</h3>
                             
-                            <a href="#contact" class="button button--flex">
-                                Contact Me<i class="uil uil-message button__icon"></i>
+                            <a href="#contact" class="button button--flex home__button" >
+                                 <span>Contact Me<i class="uil uil-message button__icon"></i></span> 
                             </a>
-                        </div>
-                    </div>
-                    
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
-                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                        </a>
-                    </div>
 
-                    <div class="home__social">
-                        <a href="https://github.com/jhonvy" class="home__social-icon" target="_blank">
-                            <i class="uil uil-github-alt"></i>
-                        </a>
-                        <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="home__social-icon">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <a href="" class="home__social-icon" target="_blank">
-                            <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                        <a href="" class="home__social-icon"target="_blank">
-                            <i class="uil uil-dribbble"></i>
-                        </a>
-                        <div class="line__vertical-align home__social-icon">
-                            <div class="line__vertical">
-                                
-                            </div>
-                        </div>   
+                            
+                             <a href="#about" class="home__scroll-button button--flex home__scroll">
+                                    <i class="uil uil-mouse-alt home__scroll-mouse "></i>
+                                    <span class="home__scroll-name">Scroll down</span>
+                                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                            </a>
+                            
+
+                        </div>
+
                     </div>
+                
                 </div>
+
+
+                <!-- home Social -->
+                <div class="home__social">
+                    <a href="https://github.com/jhonvy95/" class="home__social-icon" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    <!-- <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="home__social-icon">
+                        <i class="uil uil-instagram"></i>
+                    </a> -->
+                    <a href="" class="home__social-icon" target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    
+                    <div class="line__vertical-align home__social-icon">
+                        <div class="line__vertical">
+                            
+                        </div>
+                    </div> 
+
+                </div>
+            
             </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About Me</h2>
+            <!--===================================== ABOUT ==========================================-->
+
+            <section class="about section section__about" id="about">
+                <div class="pagination__title">
+                    <h2>
+                        <span class="blast">A</span>
+                        <span class="blast">b</span>
+                        <span class="blast">o</span>
+                        <span class="blast">u</span>
+                        <span class="blast">t</span>
+                        <span class="blast"> </span>
+                        <span class="blast"> </span>
+                        <span class="blast"> </span>
+                        <span class="blast">M</span>
+                        <span class="blast">e</span>
+                    </h2>
+                </div>
+                
                 <span class="section__subtitle">My introduction</span>
                 
                 <div class="about__container container grid">
@@ -126,638 +185,430 @@
 
                     <div class="about__data">
                         <p class="about__description">
-                            web developer,with extensive knowledge and 1 year of experience,working in technologies and Ux desing,delivering quality work
+                            Im a web Developer based in Colombia.I striving always collaborating,providing guidance and helping push boundaries to create projects tha catch the eye,with strong knowledge in backend and also basic knowledge in frontend.I am always striving to learn and develop new skills and become a better software enginner. 
+                            <br>
+                            Well-organised person,problem solver, with high attention to detail. 
+                            <br>
+                            I like outdoor activities,tv series ,games, and  programming.
                         </p>
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">08+</span>
-                                <span class="about__info-name">Years <br>experience</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">20+</span>
-                                <span class="about__info-name">Completed <br>proyect</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">05+</span>
-                                <span class="about__info-name">Companies <br>worked</span>
-                            </div>
-                        </div>
 
                         <div class="about__buttons">
-                            <a download="" href="./assets/pdf/Alexa-Cv.pdf" class="button button--flex">
-                                download CV<i class="uil uil-download-alt button__icon"></i>
+                            <a download="" href="./assets/pdf/JhonVaron-Cv.pdf" class="button button--flex">
+                                
+                                <span>download CV<i class="uil uil-download-alt button__icon"></i></span>
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!--==================== SKILLS ====================-->
+            <!--====================================== SKILLS ================================================-->
+
             <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
+                <div class="pagination__title">
+                    <h2>
+                        <span class="blast">S</span>
+                        <span class="blast">k</span>
+                        <span class="blast">i</span>
+                        <span class="blast">l</span>
+                        <span class="blast">l</span>
+                    </h2>
+                </div>
+                
                 <span class="section__subtitle">My technical level</span>
-                <div class="skills__container container grid">
-                    <div>
+
+                <div class="container grid_skills">
+
                         <!--==================== SKILLS 1 ====================-->
-                        <div class="skills__content skills__open">
+                        <div class="skills__content ">
+                            
                             <div class="skills__header">
-                                <i class="uil uil-server-network skills__icon"></i>
-
                                 <div>
-                                    <h1 class="skills__title">Backend Developer</h1>
-                                    <span class="skills__subtitle">More than 4 years</span>
+
+                                    <img src="./assets/img/Front_End.png" alt="" height="150" width="150">
                                 </div>
 
-                                <i class="uil uil-angle-down skills__arrow"></i>
+                                <div class="skills__title">
+                                    <h1>Back End</h1>
+                                </div>
+
                             </div>
 
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">Java</h3>
-                                        <span class="skills__number">90%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__java"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">Python</h3>
-                                        <span class="skills__number">70%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__python"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">Django</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__databases"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">SpringBoot</h3>
-                                        <span class="skills__number">80%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__springboot"></span>
-                                    </div>
-                                </div>
+                            <div class="skills__separate">
+                                
                             </div>
+
+                            <div class="skills__list">
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/java2.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Java</h1>
+                                    </div>
+                                </div>
+
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/python.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Python</h1>
+                                    </div>
+                                </div>
+
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/springboot.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Spring Boot</h1>
+                                    </div>
+                                </div>
+
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/Django.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Django</h1>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
                         </div>
                     
                         <!--==================== SKILLS 2 ====================-->
-                        <div class="skills__content skills__close">
+                        <div class="skills__content ">
+                            
                             <div class="skills__header">
-                                <i class="uil uil-brackets-curly skills__icon"></i>
 
                                 <div>
-                                    <h1 class="skills__title">Frontend Developer</h1>
-                                    <span class="skills__subtitle">More than 1 years</span>
+                                    <img src="./assets/img/Back_End.png" alt="" height="150" width="150">
                                 </div>
 
-                                <i class="uil uil-angle-down skills__arrow"></i>
+                                <div class="skills__title">
+                                    <h1>Front End</h1>
+                                </div>
+
                             </div>
 
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__html"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__number">40%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__css"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__javascript"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">Angular</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__angular"></span>
-                                    </div>
-                                </div>
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">Vuejs</h3>
-                                        <span class="skills__number">60%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__angular"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <!--==================== SKILLS 3 ====================-->
-                        <div class="skills__content skills__close">
-                            <div class="skills__header">
-                                <i class="uil uil-database skills__icon"></i>
-
-                                <div>
-                                    <h1 class="skills__title">Databases</h1>
-                                    <span class="skills__subtitle">More than 1 years</span>
-                                </div>
-
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">MySQL</h3>
-                                        <span class="skills__number">50%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__adobexd"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">PostgreSQL</h3>
-                                        <span class="skills__number">50%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__photoshop"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">MongoDB</h3>
-                                        <span class="skills__number">50%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__illustrator"></span>
-                                    </div>
-                                </div>
+                            <div class="skills__separate">
                                 
                             </div>
+
+                            <div class="skills__list">
+                                
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/html.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>HTML</h1>
+                                    </div>
+                                </div>
+
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/CSS.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>CSS</h1>
+                                    </div>
+                                </div>
+
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/JS.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Java Script</h1>
+                                    </div>
+                                </div>
+
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/angular.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Angular</h1>
+                                    </div>
+                                </div>
+
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/vuejs.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Vue js</h1>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    
+
+                    
+                        <!--==================== SKILLS 3 ====================-->
+                        <div class="skills__content">
+                            
+                            <div class="skills__header">
+                                <div>
+                                    <img src="./assets/img/Data_Base.png" alt="" height="150" width="150">
+                                </div>
+
+                                <div class="skills__title">
+                                    <h1 >Data Bases</h1>
+                                </div>
+                            </div>
+
+                            <div class="skills__separate">
+                               
+                            </div>
+
+                            <div class="skills__list">
+                                
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/mysql.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>My Sql</h1>
+                                    </div>
+                                </div>
+
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/postgresql.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>PostgreSQL</h1>
+                                    </div>
+                                </div>
+
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/mongodb.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>mongo DB</h1>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
 
                         <!--==================== SKILLS 4 ====================-->
-                        <div class="skills__content skills__close">
+                        <div class="skills__content">
+                           
                             <div class="skills__header">
-                                <<i class="uil uil-swatchbook skills__icon"></i>
-
                                 <div>
-                                    <h1 class="skills__title">Designer</h1>
-                                    <span class="skills__subtitle">More than 1 years</span>
+                                    <img src="./assets/img/Tools.png" alt="" height="150" width="150">
                                 </div>
 
-                                <i class="uil uil-angle-down skills__arrow"></i>
-                            </div>
-
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">Adobe XD</h3>
-                                        <span class="skills__number">50%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__adobexd"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">Photoshop</h3>
-                                        <span class="skills__number">50%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__photoshop"></span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__title">
-                                        <h3 class="skills__name">Illustrator</h3>
-                                        <span class="skills__number">50%</span>
-                                    </div>
-                                    <div class="skills__bar">
-                                        <span class="skills__percentaje skills__illustrator"></span>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-                <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">My personal journey</span>
-
-                <div class="qulification__container container">
-                    <div class="qualification__tabs section__title">
-                        <div class="qualification__button button--flex">
-                            <i class="uil uil-graduation-cap qualification__icon"></i>Education
-                        </div>
-                    </div>
-
-                    <div class="qualification__section">
-                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                        <div class="qualification__content">
-                            <!--==================== QUALIFICATION 1 ====================-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Computer Enginner</h3>
-                                    <span class="qualification__subtitle">Colombia - University</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>2009 - 2014
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
+                                <div class="skills__title">
+                                    <h1>Tools</h1>
                                 </div>
                             </div>
 
-                            <!--==================== QUALIFICATION 2 ====================-->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">Backend Developer</h3>
-                                    <span class="qualification__subtitle">Colombia - Platzi</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>2009 - 2014
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <!--==================== QUALIFICATION 3 ====================-->
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Computer Enginner</h3>
-                                    <span class="qualification__subtitle">Colombia - University</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>2009 - 2014
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-
-                            <!--==================== QUALIFICATION 4 ====================-->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <!-- <span class="qualification__line"></span> -->
-                                </div>
-
-                                <div>
-                                    <h3 class="qualification__title">Computer Enginner</h3>
-                                    <span class="qualification__subtitle">Colombia - University</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>2009 - 2014
-                                    </div>
-                                </div>
-
+                            <div class="skills__separate">
                                 
                             </div>
 
-                        </div>
-                    </div>
-                </div>
-            </section>
+                            <div class="skills__list">
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                <h2 class="section__title">Services</h2>
-                <span class="section__subtitle">what i offer</span>
-
-                <div class="services__container container grid">
-                    <!--==================== SERVICES 1 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-web-grid services__icon"></i>
-                            <h3 class="services__title">Ui/Ux <br> Designer</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Ui/Ux <br> Designer</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I develop tue user interface</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Web page development</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I create ux element interactions</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I position your company brand</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== SERVICES 2 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-arrow services__icon"></i>
-                            <h3 class="services__title">Frontend <br> Developer</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Frontend <br> Developer</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I develop tue user interface</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Web page development</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I create ux element interactions</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I position your company brand</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--==================== SERVICES 3 ====================-->
-                    <div class="services__content">
-                        <div>
-                            <i class="uil uil-pen services__icon"></i>
-                            <h3 class="services__title">Branding <br> Designer</h3>
-                        </div>
-
-                        <span class="button button--flex button--small button--link services__button">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </span>
-
-                        <div class="services__modal">
-                            <div class="services__modal-content">
-                                <h4 class="services__modal-title">Branding <br> Designer</h4>
-                                <i class="uil uil-times services__modal-close"></i>
-
-                                <ul class="services__modal-services grid">
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I develop tue user interface</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>Web page development</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I create ux element interactions</p>
-                                    </li>
-                                    <li class="services__modal-service">
-                                        <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>I position your company brand</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Most recent work</span>
-
-                <div class="portfolio__container container swiper mySwiper">
-                    <div class="swiper-wrapper">
-
-                         <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="./assets/img/portfolio1.jpg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Modern Webside</h3>
-                                <p class="portfolio__description">Website adaptable to all devices,
-                                    with ui components and animated interactions.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                         <!--==================== PORTFOLIO 2 ====================-->
-                         <div class="portfolio__content grid swiper-slide">
-                            <img src="./assets/img/portfolio2.jpg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Brand Design</h3>
-                                <p class="portfolio__description">Website adaptable to all devices,
-                                    with ui components and animated interactions.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                         <!--==================== PORTFOLIO 3 ====================-->
-                         <div class="portfolio__content grid swiper-slide">
-                            <img src="./assets/img/portfolio3.jpg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Online Store</h3>
-                                <p class="portfolio__description">Website adaptable to all devices,
-                                    with ui components and animated interactions.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                     </div>
-
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-                <div class="project__bg">
-                    <div class="project__container container grid">
-                        <div class="project__data">
-                            <h2 class="project__title">You have a new project</h2>
-                            <p class="project__description">Contact me now for your new project.</p>
-                            <a href="#contact" class="button button--flex button--white">
-                                Contact Me
-                                <i class="uil uil-message project__icon button__icon"></i> 
-                            </a>
-                        </div>
-
-                        <img src="./assets/img/project.png" alt="" class="project__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                <h2 class="section__title">Testimonial</h2>
-                <span class="section__subtitle">My client saying</span>
-
-                <div class="testimonial__container container swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <!--==================== TESTIMONIAL 1 ====================-->
-                        <div class="testimonial__content swiper-slide">
-                            <div class="testimonial__data">
-                                <div class="testimonial__header">
-                                    <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+                                <div class="skills__icons">
                                     <div>
-                                        <h3 class="testimonial__name">Sara Smith</h3>
-                                        <span class="testimonial__client">Client</span>
+                                        <img src="./assets/img/git.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Git</h1>
                                     </div>
                                 </div>
 
-                                <div>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                </div>
-                            </div>
-                            <p class="testimonial__description">I get a good impression,I carry out my project with all the possible quality and attention and support 24 hours a day</p>
-                        </div>
-
-                        <!--==================== TESTIMONIAL 2 ====================-->
-                        <div class="testimonial__content swiper-slide">
-                            <div class="testimonial__data">
-                                <div class="testimonial__header">
-                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+                                <div class="skills__icons">
                                     <div>
-                                        <h3 class="testimonial__name">Matt Robinson</h3>
-                                        <span class="testimonial__client">Client</span>
+                                        <img src="./assets/img/intellj.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>IntelliJ IDEA</h1>
                                     </div>
                                 </div>
 
-                                <div>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                </div>
-                            </div>
-                            <p class="testimonial__description">I get a good impression,I carry out my project with all the possible quality and attention and support 24 hours a day</p>
-                        </div>
-
-                        <!--==================== TESTIMONIAL 3 ====================-->
-                        <div class="testimonial__content swiper-slide">
-                            <div class="testimonial__data">
-                                <div class="testimonial__header">
-                                    <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
+                                <div class="skills__icons">
                                     <div>
-                                        <h3 class="testimonial__name">Raul Harris</h3>
-                                        <span class="testimonial__client">Client</span>
+                                        <img src="./assets/img/visualstudio.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Visual Studio</h1>
                                     </div>
                                 </div>
 
-                                <div>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
-                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/jira.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Jira</h1>
+                                    </div>
                                 </div>
-                            </div>
-                            <p class="testimonial__description">I get a good impression,I carry out my project with all the possible quality and attention and support 24 hours a day</p>
-                        </div>
-                    </div>
 
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                                <div class="skills__icons">
+                                    <div>
+                                        <img src="./assets/img/heroku.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1>Heroku</h1>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    
                 </div>
+
             </section>
 
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact Me</h2>
+            <!--============================================ PORTFOLIO ================================================-->
+
+            <section class="section" id="portfolio">
+                <div class="pagination__title">
+                    <h2>
+                        <span class="blast">P</span>
+                        <span class="blast">o</span>
+                        <span class="blast">r</span>
+                        <span class="blast">t</span>
+                        <span class="blast">f</span>
+                        <span class="blast">o</span>
+                        <span class="blast">l</span>
+                        <span class="blast">i</span>
+                        <span class="blast">o</span>
+                    </h2>
+                </div>
+                
+                <span class=" section__subtitle">Most recent work</span>
+
+                <div class="container  portfolios__grid">
+
+                    <!-- ------------------- PORFOLIO 1 ----------------- -->
+                    <div class="portfolio__card">  
+                        
+                        <div class="portfolio__card-img">
+                            <img src="./assets/img/goldbank.jpg" alt="">
+                        </div>
+
+                        <div class="portfolio__card-content">
+                            
+                            <div>
+                                <h3>Gold Bank</h3>
+                                <p>Software system, web application type, based on a microservice architecture, which allows a user to create a bank account, authenticate if they already have an account, check their balance, make money transfers to other accounts and check their payment history. transactions. Furthermore, the application makes use of a token-based authentication mechanism.</p>
+
+                                <div class="portfolio__card-skills">
+                                    <h2>Skills</h2>
+                                    <ul>
+                                        <li>vue.js</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>Python</li>
+                                        <li>Django</li>
+                                        <li>mySql</li>
+                                        <li>Java</li>
+                                        <li>Spring Boot</li>
+                                        <li>MongoDB</li>
+                                        <li>GraphQL</li>
+                                        <li>Heroku</li>
+                                        <li>Docker</li>
+                                    </ul>
+                                </div>
+
+                                <div class="portfolio__card-buttons" >
+                                    <a href="https://github.com/jhonvy95/Gold_Bank" class="button__card button__card-animation" target="_blank">
+                                    
+                                        <span>View Code  <i class="uil uil-github-alt"></i></span>
+                                    </a>          
+                                    <a href="https://gold-bank.herokuapp.com/" class="button__card button__card-animation" target="_blank">
+                                
+                                        <span>Live Demo  <i class="uil uil-eye"></i></span>
+                                    </a>        
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ------------------- PORFOLIO 2 ----------------- -->
+                    <div class="portfolio__card">  
+
+                        <div class="portfolio__card-img">
+                            <img src="./assets/img/laisladelsol.jpg" alt="">
+                        </div>
+
+                        <div class="portfolio__card-content">
+                            <div>
+                                <h3>Reservacion en Hotel</h3>
+                                <p>Web application, full stack based on a 3-layer architecture, which allows a user to make a reservation, select what type of tourist plan he wants, number of people, date, payment method, etc. He can also navigate through different sections of the page, which allows you to familiarize yourself with everything that the tourist hotel offers you.</p>
+
+                                <div class="portfolio__card-skills">
+                                    <h2>Skills</h2>
+                                    <ul>
+                                        <li>Django</li>
+                                        <li>Python</li>
+                                        <li>vue.js</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>PostgreSQL</li>
+                                        <li>Heroku</li>
+                                    </ul>
+                                </div>
+
+                                <div class="portfolio__card-buttons" >
+                                    <a href="https://github.com/jhonvy95/proyectoTurismo" class="button__card button__card-animation" target="_blank">
+                                    
+                                        <span>View Code  <i class="uil uil-github-alt"></i></span>
+                                    </a>          
+                                    <a href="https://laisladelsolfrontend.herokuapp.com/" class="button__card button__card-animation" target="_blank">
+                                
+                                        <span>Live Demo  <i class="uil uil-eye"></i></span>
+                                    </a>        
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>  
+                   
+                </div>
+                
+
+            </section>
+
+            <!--========================================= CONTACT ME ================================================-->
+
+            <section class="contact section section_contact" id="contact">
+                <div class="pagination__title">
+                    <h2>
+                        <span class="blast">C</span>
+                        <span class="blast">o</span>
+                        <span class="blast">n</span>
+                        <span class="blast">t</span>
+                        <span class="blast">a</span>
+                        <span class="blast">c</span>
+                        <span class="blast">t</span>
+                        <span class="blast"> </span>
+                        <span class="blast"> </span>
+                        <span class="blast"> </span>
+                        <span class="blast">M</span>
+                        <span class="blast">e</span>
+                    </h2>
+                </div>
+                
                     <span class="section__subtitle">Get in touch</span>
 
                     <div class="contact__container container grid">
@@ -812,8 +663,8 @@
                             </div>
 
                             <div>
-                                <button type="submit" class="button-submit">Send Message
-                                    <i class="uil uil-message button__icon"></i>
+                                <button type="submit" class="button3 button-submit">
+                                    <span>Send Message<i class="uil uil-message button__icon"></i></span>
                                 </button>
                             </div>
                         </form>
@@ -823,52 +674,34 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">Jhon</h1>
-                        <span class="footer__subtitle">Backend Developer</span>
-                    </div>
+            <div class="footer__container container">
+                <h1 class="footer__title">Jhon Varon</h1>
+                <p class="footer__description">I am Jhon Varon and this is my personal portfolio,consult me here.</p>
 
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#services" class="footer__link">Services</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="footer__link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer__link">Contactme</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer__socials">
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social">
-                            <i class="uil uil-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="footer__social">
-                            <i class="uil uil-instagram"></i>
-                        </a>
-                        <a href="" target="_blank" class="footer__social">
-                            <i class="uil uil-twitter-alt"></i>
-                        </a>
-                    </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__link" target="_blank"><i class="uil uil-linkedin-alt"></i></a>
+                    <a href="https://github.com/jhonvy95/" class="footer__link"  target="_blank"><i class="uil uil-github-alt"></i></a>
                 </div>
-
-                <p class="footer__copy">&#169; Bedicome. All rigth reserved</p>
+    
+                <p class="footer__copy">&#169; 2022 Bedicome. All rigth reserved</p>
             </div>
+
+            
             
         </footer>
+         <!--==================== SCROLL TOP ====================-->
         
-        <!--==================== SCROLL TOP ====================-->
-        
-        <a href="#" class="scrollup" id="scroll-up">
+         <a href="#" class="scrollup" id="scroll-up">
             <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
-        <!--==================== SWIPER JS ====================-->
-        <script src="./assets/js/swiper-bundle.min.js"></script>
+        
+        <!--==================== GSAP ====================-->
+        <script src="./assets/js/gsap.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="./assets/js/main.js"></script>
+        
+        <!--==================== CANVAS JS ====================-->
+        <script src="./assets/js/scriptCanvas.js"></script>
     </body>
 </html>
